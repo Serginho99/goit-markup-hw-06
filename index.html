@@ -443,11 +443,11 @@
             <div class="footer-subscribe">
             <input type="text" name="btn" id="btn" class="footer-input" placeholder="E-mail">
             <label for="btn" class="footer-label">
-              <button type="button" class="footer-btn">Подписаться</button>
-            </label>
-            <svg class="footer-subscribe-svg">
+              <button type="button" class="footer-btn">
+                <svg class="footer-subscribe-svg">
               <use href="./img/icons.svg#icon-send"></use>
-            </svg>
+            </svg>Подписаться</button>
+            </label>
             </div>
             </form>
           </div>
@@ -488,10 +488,15 @@
             <textarea name="comment" id="comment" rows="10" class="form-input form-input-comment"" placeholder="Введите текст"></textarea>
             </div>
           </form>
-          <div class="checkbox">
-        <input type="checkbox" name="policy" id="policy" class="checkbox-input">
-        <label for="policy"><span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span> <a href="" class="checkbox-link link">Условия договора</a></label>
-        </div>
+        <label for="policy" class="checkbox">
+          <input type="checkbox" name="policy" id="policy" class="checkbox-input">
+          <span class="checkbox-span-icon">
+          <svg class="checkbox-icon">
+            <use href="./img/icons.svg#icon-check"></use>
+          </svg>
+        </span>
+          <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span> <a href="" class="checkbox-link link">Условия договора</a>
+        </label>
         <button type="submit" class="submit">Отправить</button>
     </div>
     </div>
