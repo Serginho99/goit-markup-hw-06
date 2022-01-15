@@ -886,12 +886,23 @@ body {
   background-color: var(--secondary-color);
   align-items: center;
   justify-content: center;
+  color: currentColor;
 }
+
+.modal-button:hover .modal-icon,
+.modal-button:focus .modal-icon {
+  color: var(--accent-color);
+}
+
+/* .modal-button:focus .modal-icon {
+  color: var(--accent-color);
+} */
 
 .modal-icon {
   width: 11px;
   height: 11px;
-  fill: var(--heading-color);
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -903,11 +914,12 @@ body {
 }
 
 .form-input {
+  display: block;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   width: 100%;
   height: 40px;
-  padding-left: 10px;
+  padding-left: 42px;
 }
 
 .form-input-comment {
@@ -978,17 +990,20 @@ body {
 }
 
 .form-name {
+  position: relative;
   display: block;
   margin-bottom: 10px;
   /* margin-top: 12px; */
 }
 
 .form-tel {
+  position: relative;
   display: block;
   margin-bottom: 10px;
 }
 
 .form-mail {
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -999,4 +1014,49 @@ body {
 .form {
   display: block;
   margin-bottom: 20px;
+}
+
+.icon-man {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-tel {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-letter {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus-within ~ .icon-tel {
+  color: var(--accent-color);
+}
+
+.form-input:focus-within ~ .icon-man {
+  color: var(--accent-color);
+}
+
+.form-input:focus-within ~ .icon-letter {
+  color: var(--accent-color);
+}
+
+.form-input:focus {
 }
