@@ -439,7 +439,7 @@
         </div>
         <div class="footer-email">
           <h3 class="footer-title-icon">Подпишитесь на рассылку</h3>
-          <form action="">
+          <form>
             <div class="footer-subscribe">
               <input
                 type="text"
@@ -448,11 +448,12 @@
                 class="footer-input"
                 placeholder="E-mail"
               />
-              <label for="btn" class="footer-label">
-                <button type="button" class="footer-btn">
+              <label for="button" class="footer-label">
+                <button type="button" class="footer-btn" id="button">
                   <svg class="footer-subscribe-svg">
-                    <use href="./img/icons.svg#icon-send"></use></svg
-                  >Подписаться
+                    <use href="./img/icons.svg#icon-send"></use>
+                  </svg>
+                  Подписаться
                 </button>
               </label>
             </div>
@@ -468,7 +469,7 @@
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form action="" class="form" autocomplete="off">
+        <form class="form" autocomplete="off">
           <div class="form-name">
             <label for="name" class="form-label">Имя</label>
             <input type="text" name="name" id="name" class="form-input" />
